@@ -12,14 +12,14 @@ my_own_module: Этот модуль позволяет создавать и р
 Установка коллекции
 Для установки этой коллекции, используйте следующую команду:
 
-``
+```
 ansible-galaxy collection install my_own_namespace.yandex_cloud_elk
-``
+```
 
 Использование модуля
 Пример задачи с использованием модуля my_own_module:
 
-``
+```
 ---
 - hosts: localhost
   tasks:
@@ -28,12 +28,12 @@ ansible-galaxy collection install my_own_namespace.yandex_cloud_elk
         path: "/tmp/example.txt"
         content: "Hello, Yandex Cloud ELK!"
 
-``
+```
 
 Использование роли
 Для использования роли my_role в вашем playbook:
 
-``
+```
 ---
 - hosts: localhost
   collections:
@@ -41,7 +41,7 @@ ansible-galaxy collection install my_own_namespace.yandex_cloud_elk
   roles:
     - my_role
 
-``
+```
 
 Убедитесь, что вы указали нужные параметры в group_vars или передали их напрямую в playbook.
 
